@@ -103,7 +103,6 @@
     <Folder Include="Chat\" />
     <Folder Include="Jukebox\" />
     <Folder Include="MediaAnnotation\" />
-    <Folder Include="MediaRetrieval\" />
     <Folder Include="Podcast\" />
     <Folder Include="Sharing\" />
     <Folder Include="UserManagement\" />
@@ -112,6 +111,7 @@
     <Compile Include="ASLists\GetStarred.cs" />
     <Compile Include="ASLists\GetStarred2.cs" />
     <Compile Include="Common\NestedElements\Match.cs" />
+    <Compile Include="Common\NestedElements\Playlist.cs" />
     <Compile Include="Common\NestedElements\SearchResult3.cs" />
     <Compile Include="Common\NestedElements\Starred.cs" />
     <Compile Include="Common\NestedElements\Entry.cs" />
@@ -140,7 +140,12 @@
     <Compile Include="Common\Enumerations.cs" />
     <Compile Include="ConnectionInformations.cs" />
     <Compile Include="Exceptions\ConnectionNotInitialiseException.cs" />
+    <Compile Include="MediaRetrieval\MediaRetrieval.cs" />
+    <Compile Include="Playlists\CreatePlaylist.cs" />
+    <Compile Include="Playlists\DeletePlaylist.cs" />
+    <Compile Include="Playlists\GetPlaylist.cs" />
     <Compile Include="Playlists\GetPlaylists.cs" />
+    <Compile Include="Playlists\UpdatePlaylist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Response.cs" />
     <Compile Include="Common\ResponseError.cs" />
