@@ -102,7 +102,6 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <Folder Include="Chat\" />
     <Folder Include="Jukebox\" />
-    <Folder Include="MediaAnnotation\" />
     <Folder Include="Podcast\" />
     <Folder Include="Sharing\" />
     <Folder Include="UserManagement\" />
@@ -140,6 +139,11 @@
     <Compile Include="Common\Enumerations.cs" />
     <Compile Include="ConnectionInformations.cs" />
     <Compile Include="Exceptions\ConnectionNotInitialiseException.cs" />
+    <Compile Include="Exceptions\RatingValueException.cs" />
+    <Compile Include="MediaAnnotation\Scrobble.cs" />
+    <Compile Include="MediaAnnotation\SetRating.cs" />
+    <Compile Include="MediaAnnotation\Star.cs" />
+    <Compile Include="MediaAnnotation\Unstar.cs" />
     <Compile Include="MediaRetrieval\MediaRetrieval.cs" />
     <Compile Include="Playlists\CreatePlaylist.cs" />
     <Compile Include="Playlists\DeletePlaylist.cs" />

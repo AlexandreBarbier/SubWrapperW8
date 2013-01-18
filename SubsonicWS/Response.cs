@@ -22,7 +22,7 @@ namespace SubsonicWS
         {
             get
             {
-                if (String.Equals(Status, "ok", StringComparison.Ordinal))
+                if (Status == "ok")
                     return ResponseStatus.Ok;
                 return ResponseStatus.Failed;
             }
