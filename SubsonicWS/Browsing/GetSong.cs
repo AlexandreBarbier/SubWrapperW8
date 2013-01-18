@@ -14,7 +14,7 @@ namespace SubsonicWS.Browsing
         public Song Song { get; set; }
 
 
-        public async Task Init(int p)
+        public async Task Request(int p)
         {
             GetSong s = await Get("&id=" + p);
             this.Copy(s);

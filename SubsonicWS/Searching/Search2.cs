@@ -26,7 +26,7 @@ namespace SubsonicWS.Searching
         /// <param name="songCount">Maximum number of songs to return.</param>
         /// <param name="songOffset">Search result offset for songs. Used for paging.</param>
         /// <returns></returns>
-        public async Task Init(String query, int artistCount = 20, int artistOffset = 0, int albumCount = 20, int albumOffset = 0, int songCount = 20,int songOffset = 0)
+        public async Task Request(String query, int artistCount = 20, int artistOffset = 0, int albumCount = 20, int albumOffset = 0, int songCount = 20,int songOffset = 0)
         {
             String otherParam = "";
             otherParam += "&query=" + query;

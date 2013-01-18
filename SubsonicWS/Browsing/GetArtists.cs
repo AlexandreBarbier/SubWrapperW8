@@ -15,7 +15,7 @@ namespace SubsonicWS.Browsing
         [XmlArrayItem("index")]
         public List<Index> Artists { get; set; }
 
-        public async Task Init()
+        public async Task Request()
         {
             GetArtists a = await Get();
             this.Copy(a);

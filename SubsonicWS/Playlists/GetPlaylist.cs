@@ -15,7 +15,7 @@ namespace SubsonicWS.Playlists
         [XmlElement]
         public Playlist Playlist { get; set; }
 
-        public async Task Init(int id)
+        public async Task Request(int id)
         {
             GetPlaylist p = await Get("&id=" + id);
             this.Copy(p);

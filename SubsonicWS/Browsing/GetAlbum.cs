@@ -14,7 +14,7 @@ namespace SubsonicWS.Browsing
         [XmlElement("album")]
         public Album Album { get; set; }
 
-        public async Task Init(int id)
+        public async Task Request(int id)
         {
             GetAlbum a = await Get("&id=" + id);
             this.Copy(a);

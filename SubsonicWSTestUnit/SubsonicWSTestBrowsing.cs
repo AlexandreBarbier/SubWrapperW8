@@ -12,7 +12,7 @@ namespace SubsonicWSTestUnit
         {
             ConnectionInformations.initConnection(Constants.Login, Constants.Password, Constants.Server, Constants.Port, Constants.Version, Constants.UniqId);
             SubsonicWS.Browsing.GetMusicDirectory p = new SubsonicWS.Browsing.GetMusicDirectory();
-            var t = p.Init(0);
+            var t = p.Request(0);
             while (!t.IsCompleted)
                 t.Wait(10);
             Assert.IsNotNull(p.Directory);
@@ -23,7 +23,7 @@ namespace SubsonicWSTestUnit
         {
             ConnectionInformations.initConnection(Constants.Login, Constants.Password, Constants.Server, Constants.Port, Constants.Version, Constants.UniqId);
             SubsonicWS.Browsing.GetAlbum p = new SubsonicWS.Browsing.GetAlbum();
-            var t = p.Init(141);
+            var t = p.Request(141);
             while (!t.IsCompleted)
                 t.Wait(10);
             //Assert.IsNotNull(p.Album);
@@ -35,7 +35,7 @@ namespace SubsonicWSTestUnit
         {
             ConnectionInformations.initConnection(Constants.Login, Constants.Password, Constants.Server, Constants.Port, Constants.Version, Constants.UniqId);
             SubsonicWS.Browsing.GetArtist p = new SubsonicWS.Browsing.GetArtist();
-            var t = p.Init(41);
+            var t = p.Request(41);
             while (!t.IsCompleted)
                 t.Wait(10);
             Assert.IsNotNull(p.Artist);
@@ -46,7 +46,7 @@ namespace SubsonicWSTestUnit
         {
             ConnectionInformations.initConnection(Constants.Login, Constants.Password, Constants.Server, Constants.Port, Constants.Version, Constants.UniqId);
             SubsonicWS.Browsing.GetArtists p = new SubsonicWS.Browsing.GetArtists();
-            var t = p.Init();
+            var t = p.Request();
             while (!t.IsCompleted)
                 t.Wait(10);
             Assert.IsNotNull(p.Artists);
@@ -57,7 +57,7 @@ namespace SubsonicWSTestUnit
         {
             ConnectionInformations.initConnection(Constants.Login, Constants.Password, Constants.Server, Constants.Port, Constants.Version, Constants.UniqId);
             SubsonicWS.Browsing.GetIndexes p = new SubsonicWS.Browsing.GetIndexes();
-            var t = p.Init();
+            var t = p.Request();
             while (!t.IsCompleted)
                 t.Wait(10);
             Assert.IsTrue(p.Indexes != null || p.Shortcuts != null || p.Childs != null);
@@ -68,7 +68,7 @@ namespace SubsonicWSTestUnit
         {
             ConnectionInformations.initConnection(Constants.Login, Constants.Password, Constants.Server, Constants.Port, Constants.Version, Constants.UniqId);
             SubsonicWS.Browsing.GetMusicFolders p = new SubsonicWS.Browsing.GetMusicFolders();
-            var t = p.Init();
+            var t = p.Request();
             while (!t.IsCompleted)
                 t.Wait(10);
             //Assert.IsNotNull(p.MusicFolders);
@@ -80,7 +80,7 @@ namespace SubsonicWSTestUnit
         {
             ConnectionInformations.initConnection(Constants.Login, Constants.Password, Constants.Server, Constants.Port, Constants.Version, Constants.UniqId);
             SubsonicWS.Browsing.GetSong p = new SubsonicWS.Browsing.GetSong();
-            var t = p.Init(2082);
+            var t = p.Request(2082);
             while (!t.IsCompleted)
                 t.Wait(10);            
             Assert.IsNotNull(p.Song);
@@ -91,7 +91,7 @@ namespace SubsonicWSTestUnit
         {
             ConnectionInformations.initConnection(Constants.Login, Constants.Password, Constants.Server, Constants.Port, Constants.Version, Constants.UniqId);
             SubsonicWS.Browsing.GetVideos p = new SubsonicWS.Browsing.GetVideos();
-            var t = p.Init();
+            var t = p.Request();
             while (!t.IsCompleted)
                 t.Wait(10);       
             Assert.IsNotNull(p.Videos);

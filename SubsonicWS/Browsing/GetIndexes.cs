@@ -23,7 +23,7 @@ namespace SubsonicWS.Browsing
         [XmlElement("child")]
         public List<Child> Childs { get; set; }
 
-        public async Task Init(int musicFolderId = -1, int ifModifiedSince = -1)
+        public async Task Request(int musicFolderId = -1, int ifModifiedSince = -1)
         {
             string otherParam = "";
             if (musicFolderId != -1)

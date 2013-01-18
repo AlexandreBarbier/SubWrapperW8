@@ -13,7 +13,7 @@ namespace SubsonicWS.Browsing
         [XmlElement("directory")]
         public Directory Directory { get; set; }
 
-        public async Task Init(int id)
+        public async Task Request(int id)
         {
             GetMusicDirectory m = await Get("&id="+id);
             this.Copy(m);

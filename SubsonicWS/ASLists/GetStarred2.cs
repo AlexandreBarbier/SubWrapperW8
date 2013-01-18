@@ -15,7 +15,7 @@ namespace SubsonicWS.ASLists
         [XmlElement("starred")]
         public Starred Starred { get; set; }
 
-        public async Task Init()
+        public async Task Request()
         {
             GetStarred2 np = await Get();
             this.Copy(np);

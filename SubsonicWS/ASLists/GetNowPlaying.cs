@@ -16,7 +16,7 @@ namespace SubsonicWS.ASLists
         [XmlArrayItem("album")]
         public List<Entry> NowPlaying { get; set; }
 
-        public async Task Init()
+        public async Task Request()
         {
             GetNowPlaying np = await Get();
             this.Copy(np);

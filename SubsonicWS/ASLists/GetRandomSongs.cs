@@ -14,7 +14,7 @@ namespace SubsonicWS.ASLists
         [XmlArrayItem("song")]
         public List<Song> Songs { get; set; }
 
-        public async Task Init(int size = 10, String genre = "", int year = 0, int fromYear = 0, int toYear = 0, int musicFolderId = 0)
+        public async Task Request(int size = 10, String genre = "", int year = 0, int fromYear = 0, int toYear = 0, int musicFolderId = 0)
         {
             String otherParam = "&size=" + size;
             if (!String.IsNullOrWhiteSpace(genre))

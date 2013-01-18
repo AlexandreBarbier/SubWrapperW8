@@ -14,7 +14,7 @@ namespace SubsonicWS.Browsing
         [XmlElement("musicFolders")]
         public List<MusicFolder> MusicFolders { get; set; }
 
-        public async Task Init()
+        public async Task Request()
         {
             GetMusicFolders m = await Get();
             this.Copy(m);

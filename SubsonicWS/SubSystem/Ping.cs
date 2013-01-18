@@ -13,7 +13,7 @@ namespace SubsonicWS.SubSystem
         {
         }
 
-        public async Task Init()
+        public async Task Request()
         {
            Ping p = await Get();
            this.Copy(p);

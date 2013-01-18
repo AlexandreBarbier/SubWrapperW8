@@ -13,7 +13,7 @@ namespace SubsonicWS.Browsing
         [XmlElement("artist")]
         public Artist Artist { get; set; }
 
-        public async Task Init(int id)
+        public async Task Request(int id)
         {
             GetArtist a = await Get("&id=" + id);
             this.Copy(a);

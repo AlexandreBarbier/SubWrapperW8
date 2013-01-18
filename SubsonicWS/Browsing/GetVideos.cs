@@ -15,7 +15,7 @@ namespace SubsonicWS.Browsing
         [XmlArrayItem("video")]
         public List<Video> Videos { get; set; }
 
-        public async Task Init()
+        public async Task Request()
         {
             GetVideos v = await Get();
             this.Copy(v);

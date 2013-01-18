@@ -17,7 +17,7 @@ namespace SubsonicWS.SubSystem
         {
         }
 
-        public async Task Init()
+        public async Task Request()
         {
            GetLicence l = await Get();
            this.Copy(l);

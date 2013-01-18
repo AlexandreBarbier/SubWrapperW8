@@ -16,7 +16,7 @@ namespace SubsonicWS.Playlists
         [XmlArrayItem("playlist")]
         public List<Playlist> Playlists { get; set; }
 
-        public async Task Init(String username = "")
+        public async Task Request(String username = "")
         {
             String otherParam = "";
             if (!String.IsNullOrWhiteSpace(username))

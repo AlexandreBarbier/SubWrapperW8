@@ -18,7 +18,7 @@ namespace SubsonicWS.ASLists
         [XmlArrayItem("album")]
         public List<Album> Albums { get; set; }
 
-        public async Task Init(AlbumListTypeEnum type, int size = 10, int offset = 0)
+        public async Task Request(AlbumListTypeEnum type, int size = 10, int offset = 0)
         {
             GetAlbumList2 rs = await Get("&type=" + Constants.AlbumListType[type] + "&size=" + size + "&offset=" + offset);
             this.Copy(rs);

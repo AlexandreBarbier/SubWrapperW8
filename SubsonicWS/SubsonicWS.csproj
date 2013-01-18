@@ -103,7 +103,6 @@
     <Folder Include="Chat\" />
     <Folder Include="Jukebox\" />
     <Folder Include="Podcast\" />
-    <Folder Include="Sharing\" />
     <Folder Include="UserManagement\" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +157,10 @@
     <Compile Include="Searching\Search3.cs" />
     <Compile Include="Common\NestedElements\SearchResult.cs" />
     <Compile Include="Common\NestedElements\SearchResult2.cs" />
+    <Compile Include="Sharing\CreateShare.cs" />
+    <Compile Include="Sharing\GetShares.cs" />
+    <Compile Include="Common\NestedElements\Share.cs" />
+    <Compile Include="Sharing\UpdateShare.cs" />
     <Compile Include="SubSystem\GetLicence.cs" />
     <Compile Include="SubSystem\NestedElements\License.cs" />
     <Compile Include="SubSystem\Ping.cs" />

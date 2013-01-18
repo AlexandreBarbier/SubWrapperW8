@@ -26,7 +26,7 @@ namespace SubsonicWS.Searching
         /// <param name="offset">Search result offset. Used for paging.</param>
         /// <param name="newerThan">Only return matches that are newer than this. Given as milliseconds since 1970.</param>
         /// <returns></returns>
-        public async Task Init(String artist = "", String album = "", String title = "", Boolean? any = null, int count = 20, int offset = 0, int newerThan = -1)
+        public async Task Request(String artist = "", String album = "", String title = "", Boolean? any = null, int count = 20, int offset = 0, int newerThan = -1)
         {
             String otherParam = "";
             otherParam += "&count=" + count;
