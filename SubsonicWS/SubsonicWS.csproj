@@ -102,12 +102,12 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <Folder Include="Chat\" />
     <Folder Include="Jukebox\" />
-    <Folder Include="Podcast\" />
     <Folder Include="UserManagement\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ASLists\GetStarred.cs" />
     <Compile Include="ASLists\GetStarred2.cs" />
+    <Compile Include="Common\NestedElements\Episode.cs" />
     <Compile Include="Common\NestedElements\Match.cs" />
     <Compile Include="Common\NestedElements\Playlist.cs" />
     <Compile Include="Common\NestedElements\SearchResult3.cs" />
@@ -149,6 +149,8 @@
     <Compile Include="Playlists\GetPlaylist.cs" />
     <Compile Include="Playlists\GetPlaylists.cs" />
     <Compile Include="Playlists\UpdatePlaylist.cs" />
+    <Compile Include="Common\NestedElements\Channel.cs" />
+    <Compile Include="Podcast\GetPodcasts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Response.cs" />
     <Compile Include="Common\ResponseError.cs" />
@@ -158,6 +160,7 @@
     <Compile Include="Common\NestedElements\SearchResult.cs" />
     <Compile Include="Common\NestedElements\SearchResult2.cs" />
     <Compile Include="Sharing\CreateShare.cs" />
+    <Compile Include="Sharing\DeleteShare.cs" />
     <Compile Include="Sharing\GetShares.cs" />
     <Compile Include="Common\NestedElements\Share.cs" />
     <Compile Include="Sharing\UpdateShare.cs" />
