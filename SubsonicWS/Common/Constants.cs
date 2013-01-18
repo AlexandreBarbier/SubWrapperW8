@@ -11,6 +11,21 @@ namespace SubsonicWS.Common
         public const String SubNamespace = "http://subsonic.org/restapi";
         public const String SubResponse = "subsonic-response";
 
+        public static readonly Dictionary<JukeBoxAction, String> JuckeBoxActions = new Dictionary<JukeBoxAction, String>
+        {
+            {JukeBoxAction.get, "get"},
+            {JukeBoxAction.status,"status"},
+            {JukeBoxAction.set,"set"},
+            {JukeBoxAction.start, "start" },
+            {JukeBoxAction.stop, "stop"},
+            {JukeBoxAction.skip, "skip" },
+            {JukeBoxAction.add, "add" },
+            {JukeBoxAction.clear, "clear" },
+            {JukeBoxAction.remove, "remove" },
+            {JukeBoxAction.shuffle, "shuffle" },
+            {JukeBoxAction.setGain, "setGain"}
+        };
+
         public static readonly Dictionary<AlbumListTypeEnum, String> AlbumListType = new Dictionary<AlbumListTypeEnum, String>
         {
             {AlbumListTypeEnum.alphabeticalByArtist, "alphabeticalByArtist"},
