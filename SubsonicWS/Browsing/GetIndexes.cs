@@ -22,7 +22,7 @@ namespace SubsonicWS.Browsing
 
         [XmlElement("child")]
         public List<Child> Childs { get; set; }
-        
+
         /// <summary>
         /// Returns an indexed structure of all artists.
         /// </summary>

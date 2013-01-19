@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SubsonicWS.UserManagement;
+using System;
+using System.Threading.Tasks;
 
 namespace SubsonicWS
 {
@@ -61,7 +63,19 @@ namespace SubsonicWS
         {
         }
 
-        public static void initConnection(String login, String password, String server, String serverPort, String version, String uniqId, String format = "")
+        /// <summary>
+        /// Inits the connection.
+        /// </summary>
+        /// <param name="login">The login.</param>
+        /// <param name="password">The password.</param>
+        /// <param name="server">The server.</param>
+        /// <param name="serverPort">The server port.</param>
+        /// <param name="version">The version.</param>
+        /// <param name="uniqId">The uniq id.</param>
+        /// <param name="format">The format.</param>
+        /// <returns></returns>
+        /// <exception cref="SubsonicWS.Exceptions.InvalidUserNameOrPasswordException"></exception>
+        public static async Task initConnection(String login, String password, String server, String serverPort, String version, String uniqId, String format = "")
         {
             if (instance == null)
             {
@@ -87,6 +101,20 @@ namespace SubsonicWS
                 instance.UniqId = uniqId;
                 instance.Format = format;
                 instance.instanceIsInit = true;
+            }
+            GetUser u = new GetUser();
+            try
+            {
+                await u.Request(login);
+            }
+            catch (Exceptions.ResponseStatusFailedException e)
+            {
+                if (e.error.Code == 40)
+                    throw new Exceptions.InvalidUserNameOrPasswordException(e.error.Message);
+                else if (e.error.Code == 60)
+                    throw new Exceptions.TrialPeriodeEndedException(e.error.Message);
+                else
+                    throw e;
             }
         }
 

@@ -13,7 +13,7 @@ namespace SubsonicWS.Browsing
         public Song Song { get; set; }
 
         /// <summary>
-        /// Returns details for a song. 
+        /// Returns details for a song.
         /// </summary>
         /// <param name="id">The song ID.</param>
         /// <returns></returns>

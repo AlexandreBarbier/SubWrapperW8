@@ -11,7 +11,7 @@ namespace SubsonicWS.Browsing
     {
         [XmlElement("directory")]
         public Directory Directory { get; set; }
-        
+
         /// <summary>
         /// Returns a listing of all files in a music directory. Typically used to get list of albums for an artist, or list of songs for an album.
         /// </summary>

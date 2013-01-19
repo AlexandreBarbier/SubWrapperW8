@@ -100,7 +100,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <Folder Include="UserManagement\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ASLists\GetStarred.cs" />
@@ -140,6 +139,7 @@
     <Compile Include="ConnectionInformations.cs" />
     <Compile Include="Exceptions\ConnectionNotInitialiseException.cs" />
     <Compile Include="Exceptions\RatingValueException.cs" />
+    <Compile Include="Exceptions\InvalidUserNameOrPasswordException.cs" />
     <Compile Include="Jukebox\JukeboxControl.cs" />
     <Compile Include="Common\NestedElements\JukeboxStatus.cs" />
     <Compile Include="Common\NestedElements\JukeboxPlaylist.cs" />
@@ -172,6 +172,12 @@
     <Compile Include="Common\NestedElements\License.cs" />
     <Compile Include="SubSystem\Ping.cs" />
     <Compile Include="Exceptions\ResponseStatusFailedException.cs" />
+    <Compile Include="UserManagement\ChangePassword.cs" />
+    <Compile Include="UserManagement\CreateUser.cs" />
+    <Compile Include="UserManagement\DeleteUser.cs" />
+    <Compile Include="UserManagement\GetUser.cs" />
+    <Compile Include="Common\NestedElements\User.cs" />
+    <Compile Include="UserManagement\GetUsers.cs" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
