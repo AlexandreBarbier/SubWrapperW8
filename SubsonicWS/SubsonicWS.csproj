@@ -169,7 +169,7 @@
     <Compile Include="Common\NestedElements\Share.cs" />
     <Compile Include="Sharing\UpdateShare.cs" />
     <Compile Include="SubSystem\GetLicence.cs" />
-    <Compile Include="SubSystem\NestedElements\License.cs" />
+    <Compile Include="Common\NestedElements\License.cs" />
     <Compile Include="SubSystem\Ping.cs" />
     <Compile Include="Exceptions\ResponseStatusFailedException.cs" />
   </ItemGroup>
