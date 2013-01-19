@@ -172,6 +172,7 @@
     <Compile Include="Common\NestedElements\License.cs" />
     <Compile Include="SubSystem\Ping.cs" />
     <Compile Include="Exceptions\ResponseStatusFailedException.cs" />
+    <Compile Include="Exceptions\TrialPeriodeEndedException.cs" />
     <Compile Include="UserManagement\ChangePassword.cs" />
     <Compile Include="UserManagement\CreateUser.cs" />
     <Compile Include="UserManagement\DeleteUser.cs" />
