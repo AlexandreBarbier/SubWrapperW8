@@ -8,6 +8,7 @@ using SubsonicWS.Podcast;
 using SubsonicWS.Searching;
 using SubsonicWS.Sharing;
 using SubsonicWS.SubSystem;
+using SubsonicWS.UserManagement;
 using System;
 using System.Collections.Generic;
 
@@ -83,7 +84,7 @@ namespace SubsonicWS.Common
         {typeof(JukeboxControl),"jukeboxControl.view"},
         {typeof(GetChatMessages),"getChatMessages.view"},
         {typeof(AddChatMessage),"addChatMessage.view"},
-        //{PagesEnumeration.getUser,"getUser.view"},
+        {typeof(GetUser),"getUser.view"},
         //{PagesEnumeration.getUsers,"getUsers.view"},
         //{PagesEnumeration.createUser,"createUser.view"},
         //{PagesEnumeration.deleteUser,"deleteUser.view"},
