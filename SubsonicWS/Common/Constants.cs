@@ -1,5 +1,12 @@
 ﻿using SubsonicWS.ASLists;
 using SubsonicWS.Browsing;
+using SubsonicWS.Chat;
+using SubsonicWS.Jukebox;
+using SubsonicWS.MediaAnnotation;
+using SubsonicWS.Playlists;
+using SubsonicWS.Podcast;
+using SubsonicWS.Searching;
+using SubsonicWS.Sharing;
 using SubsonicWS.SubSystem;
 using System;
 using System.Collections.Generic;
@@ -52,35 +59,29 @@ namespace SubsonicWS.Common
         {typeof(GetVideos),"getVideos.view"},
         {typeof(GetAlbumList),"getAlbumList.view"},
         {typeof(GetAlbumList2),"getAlbumList2.view"},
-        {typeof(GetRandomSongs),"getRandomSongs.view"}
-        //{PagesEnumeration.getNowPlaying,"getNowPlaying.view"},
-        //{PagesEnumeration.getStarred,"getStarred.view"},
-        //{PagesEnumeration.getStarred2,"getStarred2.view"},
-        //{PagesEnumeration.search,"search.view"},
-        //{PagesEnumeration.search2,"search2.view"},
-        //{PagesEnumeration.search3,"search3.view"},
-        //{PagesEnumeration.getPlaylists,"getPlaylists.view"},
-        //{PagesEnumeration.getPlaylist,"getPlaylist.view"},
-        //{PagesEnumeration.createPlaylist,"createPlaylist.view"},
-        //{PagesEnumeration.updatePlaylist,"updatePlaylist.view"},
-        //{PagesEnumeration.deletePlaylist,"deletePlaylist.view"},
-        //{PagesEnumeration.stream,"stream.view"},
-        //{PagesEnumeration.download,"download.view"},
-        //{PagesEnumeration.hls,"hls.view"},
-        //{PagesEnumeration.getCoverArt,"getCoverArt.view"},
-        //{PagesEnumeration.getLyrics,"getLyrics.view"},
-        //{PagesEnumeration.getAvatar,"getAvatar.view"},
-        //{PagesEnumeration.star,"star.view"},
-        //{PagesEnumeration.unstar,"unstar.view"},
-        //{PagesEnumeration.setRating,"setRating.view"},
-        //{PagesEnumeration.scrobble,"scrobble.view"},
-        //{PagesEnumeration.getShares,"getShares.view"},
-        //{PagesEnumeration.createShare,"createShare.view"},
-        //{PagesEnumeration.updateShare,"updateShare.view"},
-        //{PagesEnumeration.deleteShare,"deleteShare.view"},
-        //{PagesEnumeration.getPodcasts,"getPodcasts.view"},
-        //{PagesEnumeration.jukeboxControl,"jukeboxControl.view"},
-        //{PagesEnumeration.getChatMessages,"getChatMessages.view"},
+        {typeof(GetRandomSongs),"getRandomSongs.view"},
+        {typeof(GetNowPlaying),"getNowPlaying.view"},
+        {typeof(GetStarred),"getStarred.view"},
+        {typeof(GetStarred2),"getStarred2.view"},
+        {typeof(Search),"search.view"},
+        {typeof(Search2),"search2.view"},
+        {typeof(Search3),"search3.view"},
+        {typeof(GetPlaylists),"getPlaylists.view"},
+        {typeof(GetPlaylist),"getPlaylist.view"},
+        {typeof(CreatePlaylist),"createPlaylist.view"},
+        {typeof(UpdatePlaylist),"updatePlaylist.view"},
+        {typeof(DeletePlaylist),"deletePlaylist.view"},
+        {typeof(Star),"star.view"},
+        {typeof(Unstar),"unstar.view"},
+        {typeof(SetRating),"setRating.view"},
+        {typeof(Scrobble),"scrobble.view"},
+        {typeof(GetShares),"getShares.view"},
+        {typeof(CreateShare),"createShare.view"},
+        {typeof(UpdateShare),"updateShare.view"},
+        {typeof(DeleteShare),"deleteShare.view"},
+        {typeof(GetPodcasts),"getPodcasts.view"},
+        {typeof(JukeboxControl),"jukeboxControl.view"},
+        {typeof(GetChatMessages),"getChatMessages.view"},
         //{PagesEnumeration.addChatMessage,"addChatMessage.view"},
         //{PagesEnumeration.getUser,"getUser.view"},
         //{PagesEnumeration.getUsers,"getUsers.view"},
