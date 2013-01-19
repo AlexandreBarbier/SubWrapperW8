@@ -82,7 +82,7 @@ namespace SubsonicWS.Common
         {typeof(GetPodcasts),"getPodcasts.view"},
         {typeof(JukeboxControl),"jukeboxControl.view"},
         {typeof(GetChatMessages),"getChatMessages.view"},
-        //{PagesEnumeration.addChatMessage,"addChatMessage.view"},
+        {typeof(AddChatMessage),"addChatMessage.view"},
         //{PagesEnumeration.getUser,"getUser.view"},
         //{PagesEnumeration.getUsers,"getUsers.view"},
         //{PagesEnumeration.createUser,"createUser.view"},

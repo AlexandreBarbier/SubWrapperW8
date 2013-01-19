@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml.Serialization;
 
-namespace SubsonicWS.SubSystem.NestedElements
+namespace SubsonicWS.Common.NestedElements
 {
     [XmlRoot("license")]
     public class License

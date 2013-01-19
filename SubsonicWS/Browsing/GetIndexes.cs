@@ -1,5 +1,6 @@
 ﻿using SubsonicWS.Common;
 using SubsonicWS.Common.NestedElements;
+using SubsonicWS.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -21,7 +22,14 @@ namespace SubsonicWS.Browsing
 
         [XmlElement("child")]
         public List<Child> Childs { get; set; }
-
+        
+        /// <summary>
+        /// Returns an indexed structure of all artists.
+        /// </summary>
+        /// <param name="musicFolderId">If specified, only return artists in the music folder with the given ID. See getMusicFolders. </param>
+        /// <param name="ifModifiedSince">If specified, only return a result if the artist collection has changed since the given time (in milliseconds since 1 Jan 1970).</param>
+        /// <returns></returns>
+        /// <exception cref="ResponseStatusFailedException">Get indexes failed</exception>
         public async Task Request(int musicFolderId = -1, int ifModifiedSince = -1)
         {
             string otherParam = "";
@@ -31,6 +39,8 @@ namespace SubsonicWS.Browsing
                 otherParam += "&ifModifiedSince=" + ifModifiedSince;
 
             GetIndexes i = await Get(otherParam);
+            if (i.StatusValue == ResponseStatus.Failed)
+                throw new ResponseStatusFailedException("Get indexes failed", i.Error);
             this.Copy(i);
             this.LastModified = i.LastModified;
             this.Shortcuts = new List<Shortcut>(i.Shortcuts);

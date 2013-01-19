@@ -23,6 +23,14 @@
         setGain
     }
 
+    public enum MediaType
+    {
+        music,
+        podcast,
+        audiobook,
+        video,
+    }
+
     public enum AlbumListTypeEnum
     {
         random,
