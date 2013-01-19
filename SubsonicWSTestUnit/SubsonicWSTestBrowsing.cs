@@ -26,8 +26,9 @@ namespace SubsonicWSTestUnit
             var t = p.Request(141);
             while (!t.IsCompleted)
                 t.Wait(10);
+
             //Assert.IsNotNull(p.Album);
-            Assert.IsTrue(p.Album.Songs.Count>0);
+            Assert.IsTrue(p.Album.Songs.Count > 0);
         }
 
         [TestMethod]
@@ -71,6 +72,7 @@ namespace SubsonicWSTestUnit
             var t = p.Request();
             while (!t.IsCompleted)
                 t.Wait(10);
+
             //Assert.IsNotNull(p.MusicFolders);
             Assert.IsTrue(p.MusicFolders.Count > 0);
         }
@@ -82,7 +84,7 @@ namespace SubsonicWSTestUnit
             SubsonicWS.Browsing.GetSong p = new SubsonicWS.Browsing.GetSong();
             var t = p.Request(2082);
             while (!t.IsCompleted)
-                t.Wait(10);            
+                t.Wait(10);
             Assert.IsNotNull(p.Song);
         }
 
@@ -93,7 +95,7 @@ namespace SubsonicWSTestUnit
             SubsonicWS.Browsing.GetVideos p = new SubsonicWS.Browsing.GetVideos();
             var t = p.Request();
             while (!t.IsCompleted)
-                t.Wait(10);       
+                t.Wait(10);
             Assert.IsNotNull(p.Videos);
         }
     }

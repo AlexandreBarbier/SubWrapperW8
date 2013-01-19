@@ -2,7 +2,6 @@
 using SubsonicWS.Common.NestedElements;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
@@ -38,6 +37,5 @@ namespace SubsonicWS.Browsing
             this.Indexes = new List<Index>(i.Indexes);
             this.Childs = new List<Child>(i.Childs);
         }
-
     }
 }

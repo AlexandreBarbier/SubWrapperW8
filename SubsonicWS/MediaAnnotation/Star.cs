@@ -1,8 +1,6 @@
 ﻿using SubsonicWS.Common;
 using SubsonicWS.Exceptions;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
@@ -31,7 +29,7 @@ namespace SubsonicWS.MediaAnnotation
                     otherParam.Append("&albumIds=" + item);
             if (artistIds != null)
                 foreach (var item in artistIds)
-                    otherParam.Append("&artistIds=" + item); 
+                    otherParam.Append("&artistIds=" + item);
 
             Star s = await Get(otherParam.ToString());
             this.Copy(s);
@@ -39,7 +37,6 @@ namespace SubsonicWS.MediaAnnotation
                 return;
             else
                 throw new ResponseStatusFailedException("star adding error", Error);
-
         }
     }
 }

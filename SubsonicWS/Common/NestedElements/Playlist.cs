@@ -39,7 +39,6 @@ namespace SubsonicWS.Common.NestedElements
 
         public Playlist()
         {
-
         }
     }
 }

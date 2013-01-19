@@ -100,13 +100,14 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <Folder Include="Chat\" />
-    <Folder Include="Jukebox\" />
     <Folder Include="UserManagement\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ASLists\GetStarred.cs" />
     <Compile Include="ASLists\GetStarred2.cs" />
+    <Compile Include="Chat\AddChatMessage.cs" />
+    <Compile Include="Common\NestedElements\ChatMessage.cs" />
+    <Compile Include="Chat\GetChatMessages.cs" />
     <Compile Include="Common\NestedElements\Episode.cs" />
     <Compile Include="Common\NestedElements\Match.cs" />
     <Compile Include="Common\NestedElements\Playlist.cs" />
@@ -139,6 +140,9 @@
     <Compile Include="ConnectionInformations.cs" />
     <Compile Include="Exceptions\ConnectionNotInitialiseException.cs" />
     <Compile Include="Exceptions\RatingValueException.cs" />
+    <Compile Include="Jukebox\JukeboxControl.cs" />
+    <Compile Include="Common\NestedElements\JukeboxStatus.cs" />
+    <Compile Include="Common\NestedElements\JukeboxPlaylist.cs" />
     <Compile Include="MediaAnnotation\Scrobble.cs" />
     <Compile Include="MediaAnnotation\SetRating.cs" />
     <Compile Include="MediaAnnotation\Star.cs" />

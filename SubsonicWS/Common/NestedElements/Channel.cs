@@ -27,7 +27,7 @@ namespace SubsonicWS.Common.NestedElements
 
         [XmlElement("episode")]
         public List<Episode> Episodes { get; set; }
-        
+
         public Channel()
         {
         }

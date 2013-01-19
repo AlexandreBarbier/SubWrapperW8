@@ -1,7 +1,5 @@
 ﻿using SubsonicWS.Common;
 using SubsonicWS.SubSystem.NestedElements;
-using System;
-using System.IO;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
@@ -19,10 +17,9 @@ namespace SubsonicWS.SubSystem
 
         public async Task Request()
         {
-           GetLicence l = await Get();
-           this.Copy(l);
-           this.License = l.License;
-          
+            GetLicence l = await Get();
+            this.Copy(l);
+            this.License = l.License;
         }
     }
 }

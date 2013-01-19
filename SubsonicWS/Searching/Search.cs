@@ -1,9 +1,6 @@
 ﻿using SubsonicWS.Common;
 using SubsonicWS.Common.NestedElements;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
@@ -16,7 +13,7 @@ namespace SubsonicWS.Searching
         public SearchResult SearchResult { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="artist">Artist to search for</param>
         /// <param name="album">Album to searh for.</param>
@@ -32,7 +29,7 @@ namespace SubsonicWS.Searching
             otherParam += "&count=" + count;
             otherParam += "&offset=" + offset;
             if (!String.IsNullOrWhiteSpace(artist))
-                otherParam += "&artist="+artist;
+                otherParam += "&artist=" + artist;
             if (!String.IsNullOrWhiteSpace(album))
                 otherParam += "&album=" + album;
             if (!String.IsNullOrWhiteSpace(title))

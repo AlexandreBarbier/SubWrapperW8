@@ -41,7 +41,7 @@ namespace SubsonicWSTestUnit
             var t = p.Request();
             while (!t.IsCompleted)
                 t.Wait(10);
-            
+
             Assert.IsNotNull(p.License);
         }
     }

@@ -1,9 +1,5 @@
 ﻿using SubsonicWS.Common;
 using SubsonicWS.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
@@ -12,9 +8,8 @@ namespace SubsonicWS.Sharing
     [XmlRoot(Constants.SubResponse, Namespace = Constants.SubNamespace)]
     public class DeleteShare : Response<DeleteShare>
     {
-
         /// <summary>
-        /// Deletes an existing share. 
+        /// Deletes an existing share.
         /// </summary>
         /// <param name="id">ID of the share to delete.</param>
         /// <returns></returns>

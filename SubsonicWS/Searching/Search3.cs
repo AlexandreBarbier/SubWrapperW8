@@ -2,21 +2,19 @@
 using SubsonicWS.Common.NestedElements;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace SubsonicWS.Searching
 {
     [XmlRoot(Constants.SubResponse, Namespace = Constants.SubNamespace)]
-    public class Search3 :Response<Search3>
+    public class Search3 : Response<Search3>
     {
         [XmlElement("searchResult3")]
         public List<SearchResult3> SearchResult { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="query">Search query.</param>
         /// <param name="artistCount">Maximum number of artists to return.</param>

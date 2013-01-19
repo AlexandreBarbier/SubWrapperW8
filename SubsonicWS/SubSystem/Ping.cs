@@ -1,6 +1,4 @@
 ﻿using SubsonicWS.Common;
-using System;
-using System.IO;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
@@ -15,8 +13,8 @@ namespace SubsonicWS.SubSystem
 
         public async Task Request()
         {
-           Ping p = await Get();
-           this.Copy(p);
+            Ping p = await Get();
+            this.Copy(p);
         }
     }
 }

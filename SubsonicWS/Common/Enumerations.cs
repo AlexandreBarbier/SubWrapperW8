@@ -5,30 +5,32 @@
         Ok,
         Failed
     }
+
     /*get, status (since 1.7.0), set (since 1.7.0), start, stop, skip, add, clear, remove, shuffle, setGain*/
 
     public enum JukeBoxAction
     {
-        get, 
-        status, 
+        get,
+        status,
         set,
-        start, 
-        stop, 
-        skip, 
-        add, 
-        clear, 
-        remove, 
-        shuffle, 
+        start,
+        stop,
+        skip,
+        add,
+        clear,
+        remove,
+        shuffle,
         setGain
     }
+
     public enum AlbumListTypeEnum
     {
-        random, 
-        newest, 
-        highest, 
-        frequent, 
-        recent, 
-        alphabeticalByName, 
+        random,
+        newest,
+        highest,
+        frequent,
+        recent,
+        alphabeticalByName,
         alphabeticalByArtist,
         starred
     }

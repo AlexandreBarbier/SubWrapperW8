@@ -51,10 +51,8 @@ namespace SubsonicWS.MediaRetrieval
             }
             catch (Exception)
             {
-                return false;    
+                return false;
             }
-            
-            
         }
 
         /// <summary>

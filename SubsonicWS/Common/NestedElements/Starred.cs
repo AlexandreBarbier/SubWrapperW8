@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Xml.Serialization;
 
 namespace SubsonicWS.Common.NestedElements
@@ -11,13 +8,15 @@ namespace SubsonicWS.Common.NestedElements
     {
         [XmlElement("artist")]
         public List<Artist> Artists { get; set; }
+
         [XmlElement("song")]
         public List<Song> Songs { get; set; }
+
         [XmlElement("album")]
         public List<Album> Albums { get; set; }
+
         public Starred()
         {
-
         }
     }
 }

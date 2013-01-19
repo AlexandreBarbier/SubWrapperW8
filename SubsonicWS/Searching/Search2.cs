@@ -2,8 +2,6 @@
 using SubsonicWS.Common.NestedElements;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
@@ -14,9 +12,9 @@ namespace SubsonicWS.Searching
     {
         [XmlElement("searchResult2")]
         public List<SearchResult2> SearchResult { get; set; }
-        
+
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="query">Search query.</param>
         /// <param name="artistCount">Maximum number of artists to return.</param>
@@ -26,7 +24,7 @@ namespace SubsonicWS.Searching
         /// <param name="songCount">Maximum number of songs to return.</param>
         /// <param name="songOffset">Search result offset for songs. Used for paging.</param>
         /// <returns></returns>
-        public async Task Request(String query, int artistCount = 20, int artistOffset = 0, int albumCount = 20, int albumOffset = 0, int songCount = 20,int songOffset = 0)
+        public async Task Request(String query, int artistCount = 20, int artistOffset = 0, int albumCount = 20, int albumOffset = 0, int songCount = 20, int songOffset = 0)
         {
             String otherParam = "";
             otherParam += "&query=" + query;

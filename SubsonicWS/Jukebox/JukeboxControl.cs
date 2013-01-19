@@ -2,9 +2,6 @@
 using SubsonicWS.Common.NestedElements;
 using SubsonicWS.Exceptions;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
@@ -15,6 +12,7 @@ namespace SubsonicWS.Jukebox
     {
         [XmlElement("jukeboxStatus")]
         public JukeboxStatus JukeboxStatus { get; set; }
+
         [XmlElement("jukeboxPlaylist")]
         public JukeboxPlaylist Playlist { get; set; }
 

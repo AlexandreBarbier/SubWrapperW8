@@ -1,7 +1,5 @@
 ﻿using SubsonicWS.Common;
 using SubsonicWS.Common.NestedElements;
-using System;
-using System.IO;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
@@ -12,7 +10,6 @@ namespace SubsonicWS.Browsing
     {
         [XmlElement("song")]
         public Song Song { get; set; }
-
 
         public async Task Request(int p)
         {

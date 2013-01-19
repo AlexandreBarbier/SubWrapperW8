@@ -3,8 +3,6 @@ using SubsonicWS.Common.NestedElements;
 using SubsonicWS.Exceptions;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
@@ -17,7 +15,6 @@ namespace SubsonicWS.Chat
         [XmlArrayItem("chatMessage")]
         public List<ChatMessage> ChatMessages { get; set; }
 
-
         public async Task Request(int since = -1)
         {
             String otherParam = "";
@@ -27,7 +24,6 @@ namespace SubsonicWS.Chat
             if (cm.StatusValue == ResponseStatus.Failed)
                 throw new ResponseStatusFailedException("Get chat message failed", cm.Error);
             this.Copy(cm);
-
         }
     }
 }

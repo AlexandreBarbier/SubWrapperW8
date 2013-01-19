@@ -1,7 +1,5 @@
 ﻿using SubsonicWS.Common;
 using SubsonicWS.Common.NestedElements;
-using System;
-using System.IO;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
@@ -15,7 +13,7 @@ namespace SubsonicWS.Browsing
 
         public async Task Request(int id)
         {
-            GetMusicDirectory m = await Get("&id="+id);
+            GetMusicDirectory m = await Get("&id=" + id);
             this.Copy(m);
             this.Directory = m.Directory;
         }

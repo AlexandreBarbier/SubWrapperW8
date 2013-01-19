@@ -36,7 +36,6 @@ namespace SubsonicWS.Common.NestedElements
 
         public Share()
         {
-
         }
     }
 }

@@ -1,9 +1,6 @@
 ﻿using SubsonicWS.Common;
 using SubsonicWS.Exceptions;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
@@ -22,7 +19,7 @@ namespace SubsonicWS.Sharing
         /// <exception cref="ResponseStatusFailedException">Update Share failed + us.Error</exception>
         public async Task Request(int id, string description = "", int expires = -1)
         {
-            String otherParam = "&id="+ id;
+            String otherParam = "&id=" + id;
             if (String.IsNullOrWhiteSpace(description))
                 otherParam += "&description=" + description;
             UpdateShare us = await Get(otherParam);
