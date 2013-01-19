@@ -10,7 +10,7 @@ using System;
 namespace SubsonicWS.UserManagement
 {
     [XmlRoot(Constants.SubResponse, Namespace = Constants.SubNamespace)]
-    class DeleteUser : Response<DeleteUser>
+    public class DeleteUser : Response<DeleteUser>
     {
         public async Task Request(String username)
         {

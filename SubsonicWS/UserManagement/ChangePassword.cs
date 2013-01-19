@@ -10,7 +10,7 @@ using System;
 namespace SubsonicWS.UserManagement
 {
     [XmlRoot(Constants.SubResponse, Namespace = Constants.SubNamespace)]
-    class ChangePassword : Response<ChangePassword>
+    public class ChangePassword : Response<ChangePassword>
     {
         public async Task Request(String username,String password)
         {
